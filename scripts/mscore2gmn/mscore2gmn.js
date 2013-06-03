@@ -134,7 +134,7 @@ function num2measure(num) {
 		else if (num % 240 == 0) result = "*" + num / 240 + "/8";
 		else if (num % 120 == 0) result = "*" + num / 120 + "/16";
 		else if (num % 60 == 0) result = "*" + num / 60 + "/32";
-		else result = "!!!" + num + "!!!";
+        else result = "Could not convert \"" + num + "\"";
 
 		break;
 	}
@@ -190,7 +190,7 @@ function work(dirString, traverse, origDir) {
 			if (traverse) scoreList += work(file, traverse, origDir);
 		} else {
 			if (file.match("\." + ".mscz" + "$")) {
-				scoreList += process_one(file, origDir);
+                scoreList += process_one(file, origDir) + "\n";
 			}
 		}
 	}
@@ -199,6 +199,12 @@ function work(dirString, traverse, origDir) {
 }
 
 function timesigtype2gmn(type) {
+    if (type === 1073742084) {
+        return "C";
+    } else if (type === 1073750148) {
+        return "C/";
+    }
+
 	var denominator = type % 64
 	var numerator = (type-denominator) / 64;
 
@@ -216,8 +222,8 @@ function process_one(file, origDir) {
 
 			var composerGmn = "\\composer<\"" + score.composer + "\">";
 			var titleGmn = "\\title<\"" + score.title + "\">";
-			var meterGmn = "\\meter<\"" + timesigtype2gmn(score.timesig.type) + "\">";
-			var keyGmn = "\\key<" + score.keysig + ">";
+            var keyGmn = "\\key<" + score.keysig + ">";
+            var meterGmn = "\\meter<\"" + timesigtype2gmn(score.timesig.type) + "\">";
 
 			var cursor = new Cursor(score);
 
@@ -231,8 +237,8 @@ function process_one(file, origDir) {
 					ts.writeString(titleGmn);                	
 				}
 				
-				ts.writeString(meterGmn);
-				ts.writeString(keyGmn);
+                ts.writeString(keyGmn);
+                ts.writeString(meterGmn);
 
 				cursor.staff = iStaff;
 				cursor.voice = 0;
@@ -247,11 +253,11 @@ function process_one(file, origDir) {
 						var tickLen = chord.tickLen;
 						var noteStrings = new Array();
 
-						if (chord.topNote().tied == 1) {
+                        if (chord.topNote().tied === 1) {
 							do {
 								do {
 									cursor.next();
-								} while (cursor.isChord() == false);
+                                } while (cursor.isChord() === false);
 								chord = cursor.chord();
 								tickLen += chord.tickLen;
 							} while (chord.topNote().tied != 2);
