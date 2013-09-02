@@ -28,19 +28,14 @@ Die große Terz hat vier Halbtöne, und die kleine Terz hat drei.
 \textbf{Die Zahl, die jedem Intervall zugeordnet ist, z.B. vier in der Quarte, ist bei der C-Dur-Tonleiter die Zahl der weißen Tasten inkl. der beiden Tasten am Anfang und Ende des Intervalls und hat keine weitere mathematische Bedeutung.}
 Beachten Sie, daß das Wort \enquote{Tonleiter} bzw. \enquote{Skala} in \enquote{chromatische Tonleiter}, \enquote{C-Dur-Tonleiter} und \enquote{logarithmische oder Frequenz-Skala} (s.u.) eine völlig unterschiedliche Bedeutung hat; die zweite ist eine Untermenge der ersten.
 
-<table border>
- <tr>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Oktave}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Quinte}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Quarte}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Gr. Terz}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Kl. Terz}</td>
-  <td bgcolor=\enquote{\#E0E0E0}> </td>
-  <td bgcolor=\enquote{\#E0E0E0}>  \ 
- CDEFGAH & C D E F & G A H & C \# D \# & E F \# & G \# A \# H & C \ 
- 1 & 2 & 3 & 4 & 5 & 6 & 8 \ 
-</table>
-<h5>(Tabelle 2.2a: Frequenzverhältnisse der Intervalle in der chromatischen Tonleiter)</h5>
+\begin{tabular}{l|l|l|l|l|l|l}
+ \textbf{Oktave} & \textbf{Quinte} & \textbf{Quarte} & \textbf{Gr. Terz} & \textbf{Kl. Terz} & & \\ 
+ \hline
+ CDEFGAH & C D E F & G A H & C \# D \# & E F \# & G \# A \# H & C \\
+ 1 & 2 & 3 & 4 & 5 & 6 & 8 \\
+\end{tabular}
+
+%<h5>(Tabelle 2.2a: Frequenzverhältnisse der Intervalle in der chromatischen Tonleiter)</h5>
 Wir können oben sehen, daß eine Quarte und eine Quinte sich zu einer Oktave \enquote{aufaddieren} und eine große Terz und eine kleine Terz sich zu einer Quinte \enquote{aufaddieren}.
 Beachten Sie, daß diese Addition im logarithmischen Raum erfolgt, wie unten erklärt wird.
 Die fehlende Ganzzahl 7 wird ebenfalls unten erklärt.
@@ -57,41 +52,27 @@ Deshalb beträgt die Frequenzänderung für jeden Halbton:
 
 
 \hypertarget{gleich21}{}
-<table border>&\#9;Halbtonschritt<sup>12</sup>&\#9;= 2&\#9;oder &\#9;Halbtonschritt&\#9;= 2<sup>1/12</sup> pprox 1,05946 \ </table>
-<h5>(Gleichung 2.1)</h5>
+%<table border>&\#9;Halbtonschritt<sup>12</sup>&\#9;= 2&\#9;oder &\#9;Halbtonschritt&\#9;= 2<sup>1/12</sup> pprox 1,05946 \ </table>
+%<h5>(Gleichung 2.1)</h5>
 
 Gleichung 2.1 definiert die ET chromatische Tonleiter und erlaubt die Berechnung der Frequenzverhältnisse von \enquote{Intervallen} in dieser Tonleiter.
 Wie verhalten sich die \enquote{Intervalle} bei ET zu den Frequenzverhältnissen der reinen Intervalle?
 \textbf{Der Vergleich ist in Tabelle 2.2b aufgeführt und zeigt, daß die Intervalle der ET-Tonleiter den reinen Intervallen sehr nah kommen.}
 
-<table border cellpadding=3>
- <tr>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Intervall}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Freq.-Verh.}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{ET-Tonleiter}</td>
-  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Differenz} \ 
- <tr>
-  <td valign=\enquote{bottom}>Kleine Terz</td>
-  <td valign=\enquote{bottom}>6/5 = 1,2000 & Halbtonschritt<sup>3</sup> pprox 1,1892</td>
-  <td valign=\enquote{bottom}>+0,0108 \ 
- <tr>
-  <td valign=\enquote{bottom}>Große Terz</td>
-  <td valign=\enquote{bottom}>5/4 = 1,2500 & Halbtonschritt<sup>4</sup> pprox 1,2599</td>
-  <td valign=\enquote{bottom}>-0,0099 \ 
- <tr>
-  <td valign=\enquote{bottom}>Quarte</td>
-  <td valign=\enquote{bottom}>4/3 pprox 1,3333 & Halbtonschritt<sup>5</sup> pprox 1,3348</td>
-  <td valign=\enquote{bottom}>-0,0015 \ 
- <tr>
-  <td valign=\enquote{bottom}>Quinte</td>
-  <td valign=\enquote{bottom}>3/2 = 1,5000 & Halbtonschritt<sup>7</sup> pprox 1,4983</td>
-  <td valign=\enquote{bottom}>+0,0017 \ 
- <tr>
-  <td valign=\enquote{bottom}>Oktave</td>
-  <td valign=\enquote{bottom}>2/1 = 2,0000 & Halbtonschritt<sup>12</sup> = 2,0000</td>
-  <td valign=\enquote{bottom}>0,0000 \ 
-</table>
-<h5>(Tabelle 2.2b: Vergleich der reinen Intervalle mit der gleichschwebend temperierten Tonleiter)</h5>
+\begin{table}
+ \begin{tabular}{l|l|l|l}
+ \textbf{Intervall} & \textbf{Freq.-Verh.} & \textbf{ET-Tonleiter} & \textbf{Differenz} \\ 
+ \hline
+ Kleine Terz & 6/5 = 1,2000 & Halbtonschritt<sup>3</sup> pprox 1,1892 & +0,0108 \\ 
+ Große Terz & 5/4 = 1,2500 & Halbtonschritt<sup>4</sup> pprox 1,2599 & -0,0099 \\ 
+ Quarte & 4/3 pprox 1,3333 & Halbtonschritt<sup>5</sup> pprox 1,3348 & -0,0015 \\ 
+ Quinte & 3/2 = 1,5000 & Halbtonschritt<sup>7</sup> pprox 1,4983 & +0,0017 \\ 
+ Oktave & 2/1 = 2,0000 & Halbtonschritt<sup>12</sup> = 2,0000 & 0,0000 \\ 
+ \end{tabular}
+ \caption{Vergleich der reinen Intervalle mit der gleichschwebend temperierten Tonleiter}
+\end{table}
+%<h5>(Tabelle 2.2b: Vergleich der reinen Intervalle mit der gleichschwebend temperierten Tonleiter)</h5>
+
 \textbf{Die Abweichung ist bei den Terzen am größten, mehr als fünfmal so groß wie die Abweichung bei den anderen Intervallen aber trotzdem nur ungefähr 1\%.}
 Nichtsdestoweniger sind diese Abweichungen leicht zu hören, und einige Klavierliebhaber haben sie großmütig als \enquote{die rollenden Terzen} tituliert, während sie in Wahrheit inakzeptable Dissonanzen sind.
 Es ist ein Mangel, mit dem wir leben müssen, wenn wir die ET-Tonleiter akzeptieren wollen.

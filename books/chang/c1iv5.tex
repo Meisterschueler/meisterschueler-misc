@@ -41,8 +41,12 @@ Innerhalb eines Faktors von 2 oder 3 ist Linearität sicherlich eine gute Näher
 Beachten Sie, daß die Linearität in der ersten Näherung nicht davon abhängt, ob man ein schneller oder langsamer Lerner ist; das ändert nur die Proportionalitätskonstante.
 Deshalb kommen wir zur ersten Gleichung
 
-<table border>L = kT \ </table>
-<h5>(Gleichung 1.1)</h5>
+%<table border>L = kT \ </table>
+%<h5>(Gleichung 1.1)</h5>
+\begin{equation}
+ L=kT
+\end{equation}
+
 wobei L die Zunahme des Lernens im Zeitintervall T und k die Proportionalitätskonstante ist.
 Wir versuchen, die Abhängigkeit von L von der Zeit zu finden, oder L(t), wobei t die Zeit ist (im Gegensatz zu T, was ein Zeitintervall ist).
 Genauso ist L eine Zunahme des Lernens, während L(t) eine Funktion ist.
@@ -53,17 +57,30 @@ Aber das ist nicht das L, das wir behalten, weil wir im Laufe der Zeit etwas L \
 Leider können wir um so mehr vergessen, je mehr wir wissen; d.h. die Menge, die wir vergessen, ist zu der ursprünglichen Menge Wissen L(U) proportional.
 Angenommen, wir haben L(U) erworben, ist die Menge L, die wir in T verlieren, deshalb:
 
-<table border>L = \-kTL(U) \ </table>
-<h5>(Gleichung 1.2)</h5>
+%<table border>L = \-kTL(U) \ </table>
+%<h5>(Gleichung 1.2)</h5>
+\begin{equation}
+ L= -kTL(U)
+\end{equation}
+
 wobei die \enquote{k}s in den Gleichungen 1.1 und 1.2 unterschiedlich sind, aber wir benennen sie der Einfachheit halber nicht um.
 Beachten Sie, daß k ein negatives Vorzeichen hat, weil wir L verlieren.
 Gleichung 1.2 führt zu der Differentialgleichung
-<table border>dL(t)/dt = \-kL(t) \ </table>
-<h5>(Gleichung 1.3)</h5>
+
+%<table border>dL(t)/dt = \-kL(t) \ </table>
+%<h5>(Gleichung 1.3)</h5>
+\begin{equation}
+ dL(t)/dt=-kL(t)
+\end{equation}
+
 wobei d für Differential steht (das ist alles normale Infinitesimalrechnung), und die Lösung dieser Differentialgleichung ist:
 
-<table border>L(t) = Ke<sup>\-kt</sup> \ </table>
-<h5>(Gleichung 1.4)</h5>
+%<table border>L(t) = Ke<sup>\-kt</sup> \ </table>
+%<h5>(Gleichung 1.4)</h5>
+\begin{equation}
+ L(t)=Ke^{-kt}
+\end{equation}
+
 wobei e die Basis des natürlichen Logarithmus ist (ca. 2,71828), und K ist eine neue Konstante, die mit k verbunden ist (der Einfachheit halber haben wir einen weiteren Term in der Lösung ignoriert, der im jetzigen Stadium unwichtig ist).
 Gleichung 1.4 sagt uns, daß wir, wenn wir L gelernt haben, sofort anfangen, es exponentiell zur Zeit zu vergessen, wenn der Prozeß des Vergessens linear zur Zeit ist.
 
@@ -75,8 +92,12 @@ Deshalb ist es im allgemeinen nicht möglich, für jeden Prozeß genaue Werte f�
 Beim Klavierüben müssen wir schwieriges Material viele Male wiederholen, bevor wir es gut spielen können, und wir müssen jeder Wiederholung beim Üben eine Zahl (sagen wir i) zuordnen.
 Dann wird Gleichung 1.4 zu
 
-<table border>L(i,t,k) = K(i)e<sup>\-t(i)/T(k)</sup> \ </table>
-<h5>(Gleichung 1.5)</h5>
+%<table border>L(i,t,k) = K(i)e<sup>\-t(i)/T(k)</sup> \ </table>
+%<h5>(Gleichung 1.5)</h5>
+\begin{equation}
+ L(i,t,k)=K(i)e^{-t(i)/T(k)}
+\end{equation}
+
 für jede Wiederholung i und jeden \enquote{Lernen/Vergessen}-Prozeß k.
 Lassen Sie uns ein paar relevante Beispiele untersuchen.
 Angenommen, Sie üben nacheinander 4 Noten eines parallelen Sets, spielen schnell und wechseln die Hände, usw. 10 Minuten lang.
@@ -87,8 +108,12 @@ Wir müssen aber den Betrag von L(U) berechnen, den wir nach der zehnminütigen 
 Da wir viele Male wiederholen, müssen wir in Wahrheit das kumulierte Lernen von allen berechnen.
 Gemäß Gleichung 1.5, ist dieser kumulative Effekt durch die Summe aller \enquote{L}s über alle Wiederholungen des parallelen Sets gegeben:
 
-<table border>L(Total) = &sum; über i von K(i)e<sup>\-t(i)/T(k)</sup> \ </table>
-<h5>(Gleichung 1.6)</h5>
+%<table border>L(Total) = &sum; über i von K(i)e<sup>\-t(i)/T(k)</sup> \ </table>
+%<h5>(Gleichung 1.6)</h5>
+\begin{equation}
+ L(Total)=\sum_i K(i)e^{t(i)/T(k)}
+\end{equation}
+
 Lassen Sie uns nun ein paar Werte in Gleichung 1.6 einsetzen, damit wir ein paar Antworten bekommen.
 Nehmen Sie eine Passage, die Sie (mit der intuitiven Methode) langsam in ungefähr 100 Sekunden HT spielen können.
 Diese Passage enthält vielleicht 2 oder 3 parallele Sets, die schwierig sind und die Sie in weniger als einer Sekunde schnell spielen können, so daß Sie die Sets in diesen 100 Sekunden (mit den Methoden dieses Buchs) mehr als hundertmal wiederholen können.
@@ -99,8 +124,8 @@ Beachten Sie, daß Sie auch nach langer Zeit niemals alles vergessen, weil der P
 Auch können Sie mit parallelen Sets innerhalb kurzer Zeit viele Wiederholungen ausführen, so daß sich diese Lernereignisse schnell ansammeln.
 Diese Vergessenszeitkonstante von 30 Sekunden hängt von dem Mechanismus des Lernens und Vergessens ab, und ich habe eine relativ kurze für schnelle Wiederholungen ausgewählt; wir werden unten eine viel längere untersuchen.
 
-Eine Wiederholung von einem parallelen Set pro Sekunde angenommen, ist die Lernmenge durch die erste Wiederholung e<sup>\-100/30</sup> pprox 0,04 (Sie haben 100 Sekunden, um die erste Wiederholung zu vergessen), während Ihnen die letzte Wiederholung e<sup>\-1/30</sup> pprox 0,97 gibt und die durchschnittliche Lernmenge ungefähr dazwischen liegt: ungefähr 0,4 (wie wir sehen werden, müssen wir nicht genau sein). Wir kommen so mit Hilfe der parallelen Sets bei mehr als 100 Wiederholungen auf eine gelernte Menge von mehr als 40.
-Bei der intuitiven Methode haben wir eine einzige Wiederholung oder e<sup>\-100/30</sup> pprox 0,04.
+Eine Wiederholung von einem parallelen Set pro Sekunde angenommen, ist die Lernmenge durch die erste Wiederholung $e^{-100/30} \approx 0,04$ (Sie haben 100 Sekunden, um die erste Wiederholung zu vergessen), während Ihnen die letzte Wiederholung $e^{-1/30} \approx 0,97$ gibt und die durchschnittliche Lernmenge ungefähr dazwischen liegt: ungefähr 0,4 (wie wir sehen werden, müssen wir nicht genau sein). Wir kommen so mit Hilfe der parallelen Sets bei mehr als 100 Wiederholungen auf eine gelernte Menge von mehr als 40.
+Bei der intuitiven Methode haben wir eine einzige Wiederholung oder $e^{-100/30} \approx 0,04$.
 Der Unterschied ist ein Faktor von 40/0,04 = 1.000!
 Bei einem solch großen Faktor brauchen wir keine große Genauigkeit, um zu zeigen, daß es einen großen Unterschied gibt.
 Die tatsächliche Differenz in der Lernmenge kann sogar noch größer sein, weil die Wiederholung mit der intuitiven Methode mit niedriger Geschwindigkeit stattfindet, während die Wiederholrate der parallelen Sets mit der endgültigen Geschwindigkeit oder sogar einer noch höheren Geschwindigkeit erzielt wird.
