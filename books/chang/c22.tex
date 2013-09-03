@@ -16,19 +16,20 @@ Informationen über das Stimmen finden Sie bei White, Howell, Fischer, Jorgensen
 
 \subsection{Mathematische Behandlung}\hypertarget{c2_2_math}{} 
 
-In Tabelle 2.2a sind drei Oktaven aufgeführt.
+In \autoref{tab:chromleiter} sind drei Oktaven aufgeführt.
 Die schwarzen Tasten des Klaviers werden mit Kreuzen dargestellt, z.B. steht das \# rechts von C für ein C\#, und ist nur bei der höchsten Oktave ausgewiesen.
 \textbf{Jede der aufeinanderfolgenden Frequenzänderungen in der chromatischen Tonleiter wird ein Halbton genannt, und eine Oktave besteht aus 12 Halbtönen.}
 Die Hauptintervalle und die Ganzzahlen, die die Frequenzverhältnisse dieser Intervalle repräsentieren, sind jeweils oberhalb und unterhalb der chromatischen Tonleiter aufgeführt.
 Das Wort Intervall wird hierbei im Sinne von zwei Noten benutzt, deren Frequenzverhältnis der Quotient kleiner ganzer Zahlen ist.
 Außer für Vielfache dieser Grundintervalle erzeugen Ganzzahlen, die größer als ungefähr 10 sind, Intervalle, die für das Ohr nicht einfach zu erkennen sind.
-Gemäß Tabelle 2.2a ist das grundlegendste Intervall die Oktave, bei der die Frequenz der höheren Note das Doppelte der Frequenz der tieferen Note ist.
+Gemäß \autoref{tab:chromleiter} ist das grundlegendste Intervall die Oktave, bei der die Frequenz der höheren Note das Doppelte der Frequenz der tieferen Note ist.
 Das Intervall zwischen C und G ist eine Quinte, und die Frequenzen von C und G stehen in einem Verhältnis von 2 zu 3 zueinander.
 Die große Terz hat vier Halbtöne, und die kleine Terz hat drei.
 \textbf{Die Zahl, die jedem Intervall zugeordnet ist, z.B. vier in der Quarte, ist bei der C-Dur-Tonleiter die Zahl der weißen Tasten inkl. der beiden Tasten am Anfang und Ende des Intervalls und hat keine weitere mathematische Bedeutung.}
 Beachten Sie, daß das Wort \enquote{Tonleiter} bzw. \enquote{Skala} in \enquote{chromatische Tonleiter}, \enquote{C-Dur-Tonleiter} und \enquote{logarithmische oder Frequenz-Skala} (s.u.) eine völlig unterschiedliche Bedeutung hat; die zweite ist eine Untermenge der ersten.
 
 \begin{table}
+ \label{tab:chromleiter}
  \begin{tabular}{l|l|l|l|l|l|l}
   \textbf{Oktave} & \textbf{Quinte} & \textbf{Quarte} & \textbf{Gr. Terz} & \textbf{Kl. Terz} & & \\ 
   \hline
@@ -58,16 +59,18 @@ Deshalb beträgt die Frequenzänderung für jeden Halbton:
 %<table border>&\#9;Halbtonschritt<sup>12</sup>&\#9;= 2&\#9;oder &\#9;Halbtonschritt&\#9;= 2<sup>1/12</sup> pprox 1,05946 \ </table>
 %<h5>(Gleichung 2.1)</h5>
 \begin{equation}
+ \label{eq:Halbtonschritt}
  Halbtonschritt^{12} = 2 oder Halbtonschritt = 2^{1/12} \approx 1,05946
 \end{equation}
 
 
-Gleichung 2.1 definiert die ET chromatische Tonleiter und erlaubt die Berechnung der Frequenzverhältnisse von \enquote{Intervallen} in dieser Tonleiter.
+\autoref{eq:Halbtonschritt} definiert die ET chromatische Tonleiter und erlaubt die Berechnung der Frequenzverhältnisse von \enquote{Intervallen} in dieser Tonleiter.
 Wie verhalten sich die \enquote{Intervalle} bei ET zu den Frequenzverhältnissen der reinen Intervalle?
-\textbf{Der Vergleich ist in Tabelle 2.2b aufgeführt und zeigt, daß die Intervalle der ET-Tonleiter den reinen Intervallen sehr nah kommen.}
+\textbf{Der Vergleich ist in \autoref{tab:templeiter} aufgeführt und zeigt, daß die Intervalle der ET-Tonleiter den reinen Intervallen sehr nah kommen.}
 
 \begin{table}
  \begin{tabular}{l|l|l|l}
+ \label{tab:templeiter} 
  \textbf{Intervall} & \textbf{Freq.-Verh.} & \textbf{ET-Tonleiter} & \textbf{Differenz} \\ 
  \hline
  Kleine Terz & 6/5 = 1,2000 & $Halbtonschritt^3 \approx 1,1892$ & +0,0108 \\ 
@@ -85,8 +88,8 @@ Nichtsdestoweniger sind diese Abweichungen leicht zu hören, und einige Klavierl
 Es ist ein Mangel, mit dem wir leben müssen, wenn wir die ET-Tonleiter akzeptieren wollen.
 Die Abweichungen bei den Quarten und Quinten erzeugen um das mittlere C Schwebungen von ungefähr 1 Hz, was bei den meisten Musikstücken kaum zu hören ist; diese Schwebungsfrequenz verdoppelt sich jedoch mit jeder höheren Oktave.
 
-Wäre die Ganzzahl 7 in Tabelle 2.2a aufgenommen worden, hätte sie ein Intervall mit dem Verhältnis 7/6 repräsentiert und würde dem Quadrat eines Halbtonschritts entsprechen.
-Die Abweichung zwischen diesen beiden Zahlen beträgt mehr als 4\% und ist zu groß, um ein musikalisch akzeptables Intervall zu bilden; sie wurde deshalb nicht in Tabelle 2.2a aufgeführt.
+Wäre die Ganzzahl 7 in \autoref{tab:chromleiter} aufgenommen worden, hätte sie ein Intervall mit dem Verhältnis 7/6 repräsentiert und würde dem Quadrat eines Halbtonschritts entsprechen.
+Die Abweichung zwischen diesen beiden Zahlen beträgt mehr als 4\% und ist zu groß, um ein musikalisch akzeptables Intervall zu bilden; sie wurde deshalb nicht in \autoref{tab:chromleiter} aufgeführt.
 Es ist nur ein mathematischer Zufall, daß die aus 12 Tönen bestehende chromatische Tonleiter so viele Verhältnisse nahe an den reinen Intervallen erzeugt.
 \textbf{Von den 8 kleinsten Ganzzahlen führt nur die Zahl 7 zu einem völlig inakzeptablen Intervall.
 Die chromatische Tonleiter basiert auf einem glücklichen mathematischen Zufall der Natur!
@@ -94,8 +97,8 @@ Sie wird durch die kleinste Anzahl von Noten gebildet, die die maximale Anzahl v
 Kein Wunder, daß frühe Zivilisationen glaubten, es läge etwas mystisches in dieser Tonleiter.
 Die Zahl der Noten in einer Oktave zu erhöhen, führt zu keiner großen Verbesserung der Intervalle, bis die Zahlen sehr groß werden, was diesen Ansatz für die meisten Musikinstrumente undurchführbar macht.
 
-Beachten Sie, daß die Frequenzverhältnisse der Quarten und Quinten sich nicht zu dem der Oktave aufaddieren (1,5000 + 1,3333 = 2,8333 statt 2,0000).
-Sie addieren sich allerdings im logarithmischen Maßstab, weil (3/2)x(4/3) = 2.
+Beachten Sie, daß die Frequenzverhältnisse der Quarten und Quinten sich nicht zu dem der Oktave aufaddieren ($1,5000 + 1,3333 = 2,8333$ statt 2,0000).
+Sie addieren sich allerdings im logarithmischen Maßstab, weil $(3/2)*(4/3) = 2$.
 Im logarithmischen Raum wird die Multiplikation zur Addition.
 Warum ist das so wichtig?
 Weil die Geometrie der Cochlea (Ohrschnecke) anscheinend eine logarithmische Komponente hat.
@@ -109,7 +112,7 @@ Die logarithmische Skala stellt sicher, daß die beiden Noten jedes Intervalls, 
 Durch die Übernahme einer logarithmischen Skala wird die Tastatur mechanisch auf das menschliche Ohr abgebildet!
 Das ist wahrscheinlich der Grund, warum Harmonien für das Ohr so angenehm sind - Harmonien werden durch das menschliche Gehör am leichtesten entschlüsselt und erinnert.
 
-Angenommen, wir würden \hyperlink{gleich21}{Gleichung 2.1} nicht kennen; können wir die ET chromatische Tonleiter aus den Beziehungen der Intervalle erzeugen?
+Angenommen, wir würden \hyperlink{gleich21}{\autoref{eq:Halbtonschritt}} nicht kennen; können wir die ET chromatische Tonleiter aus den Beziehungen der Intervalle erzeugen?
 Wenn die Antwort ja ist, kann ein Klavierstimmer ein Klavier stimmen, ohne Berechnungen durchführen zu müssen.
 Diese Intervallbeziehungen, so stellt sich heraus, bestimmen die Frequenzen aller Noten der zwölfnotigen chromatischen Tonleiter.
 Eine Temperatur ist eine Gruppe von Intervallbeziehungen, die diese Bestimmung ermöglicht.
