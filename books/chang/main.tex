@@ -19,76 +19,80 @@
 \maketitle
 \tableofcontents
 
-\include{preface}
+\input{preface}	% MOD: toc handling
 
-%\include{c1i1}
+\input{c1i1}	% Broken items
 
-\include{c1ii1}
-%\include{c1ii5}
-\include{c1ii10}
-\include{c1ii12}
-\include{c1ii15}
-\include{c1ii18}
-\include{c1ii21}
-\include{c1ii23}
-%\include{c1ii25}
+\input{c1ii1}
+\input{c1ii5}	% Hyperlink in \section
+\input{c1ii10}
+\input{c1ii12}
+\input{c1ii15}
+\input{c1ii18}
+\input{c1ii21}
+\input{c1ii23}
+\input{c1ii25}	% Hyperlink in \section
 
-\include{c1iii1}
-\include{c1iii2}
-\include{c1iii3}
-\include{c1iii4}
-\include{c1iii4b}
-\include{c1iii4c}
-\include{c1iii5}
-%\include{c1iii5a2}
-\include{c1iii5b}
-%\include{c1iii6}
-\include{c1iii6e}
-%\include{c1iii6j}
-\include{c1iii6l}
-\include{c1iii6l2}
-\include{c1iii6m}
-\include{c1iii7}
-\include{c1iii7b}
-\include{c1iii7d}
-\include{c1iii7f}
-\include{c1iii7h}
-\include{c1iii7i}
-\include{c1iii8}
-\include{c1iii9}
-%\include{c1iii11}
-%\include{c1iii13}
-\include{c1iii14}
-\include{c1iii14e}
-\include{c1iii14g}
-\include{c1iii15}
-%\include{c1iii16}
-\include{c1iii16d}
-%\include{c1iii17} %zollprobleme
-\include{c1iii17e}
-%\include{c1iii18}
-\include{c1iii19}
-\include{c1iii20}
-%\include{c1iii21}
+\input{c1iii1}
+\input{c1iii2}
+\input{c1iii3}
+\input{c1iii4}
+\input{c1iii4b}
+\input{c1iii4c}
+\input{c1iii5}
+\input{c1iii5a2}	% Tabelle, footnote
+\input{c1iii5b}
+\input{c1iii6}
+\input{c1iii6e}
+\input{c1iii6j}
+\input{c1iii6l}
+\input{c1iii6l2}
+\input{c1iii6m}
+\input{c1iii7}
+\input{c1iii7b}
+\input{c1iii7d}
+\input{c1iii7f}
+\input{c1iii7h}
+\input{c1iii7i}
+\input{c1iii8}
+\input{c1iii9}
+\input{c1iii10}
+\input{c1iii11}	% items
+\input{c1iii13}	% \footnote in \section
+\input{c1iii14}
+\input{c1iii14e}
+\input{c1iii14g}
+\input{c1iii15}
+\input{c1iii16}
+\input{c1iii16d}
+\input{c1iii17}
+\input{c1iii17e}
+\input{c1iii18}	% unterstrich... Bug im Skript
+\input{c1iii19}
+\input{c1iii20}
+\input{c1iii21}	% items
 
-\include{c1iv1}
-\include{c1iv2}
-\include{c1iv3}
-\include{c1iv4}
-%\include{c1iv5}
-\include{c1iv6}
+\input{c1iv1}
+\input{c1iv2}
+\input{c1iv3}
+\input{c1iv4}
+\input{c1iv5}	% Viele Gleichungen
+\input{c1iv6}
 
-%\include{c21}
-%\include{c22}
-%\include{c23} %zollprobleme
-\include{c25}
-\include{c25e}
-\include{c26}
-\include{c27}
+\input{c21}
+\input{c22}	% Tabelle, (angezeigt wird aber Gleichung!!!)
+\input{c23}
+\input{c25}
+\input{c25e}
+\input{c26}	% MOD: Link in Subsection
+\input{c27}	% MOD: Gleichungen eingestellt... Footnotes irgendwie defekt
 
-\include{c31}
-\include{c33}
-%\include{c35}
-\include{c36}
+\input{c31}
+\input{c33}
+\input{c35}	% Webadresse falsch, Bug im skript
+\input{c36}
+
+%\input{ueberset}
+%\input{testimonials}
 
 \end{document}
