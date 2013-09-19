@@ -29,39 +29,39 @@ s = re.sub("\\%", "\\\\%", s)
 #GLIEDERUNG
 s = re.sub("(<a name=\")(.+)(\"></a>[\n\r\s]+)"
     "(<h2><u>Kapitel [0-9]+\: )(.+)(</u></h2>)",
-    lambda m: "\\part{%s}\\hypertarget{%s}{}" % (m.group(5), m.group(2)), s)
+    lambda m: "\\chapter{%s}\r\n\\label{%s}" % (m.group(5), m.group(2)), s)
 
 s = re.sub("(<a name=\")(.+)(\"></a>[\n\r\s]+)"
     "(<h2><u>)(.+)(</u></h2>)",
-    lambda m: "\\section*{%s}\\hypertarget{%s}{}" % (m.group(5), m.group(2)), s)
+    lambda m: "\\section*{%s}\r\n\\label{%s}" % (m.group(5), m.group(2)), s)
 
 
 s = re.sub("(<a name=\")(.+)(\"></a>[\n\r\s]+)(<h2><br>[IVX]+\. )(.+)(</h2>)",
-    lambda m: "\\chapter{%s}\\hypertarget{%s}{}" % (m.group(5), m.group(2)), s)
+    lambda m: "\\section{%s}\r\n\\label{%s}" % (m.group(5), m.group(2)), s)
 
 s = re.sub("(<h2><br>[IVX]+\. )(.+)(</h2>)",
-    lambda m: "\\chapter{%s}" % m.group(2), s)
-
-
-s = re.sub("(<a name=\")(.+)(\"></a>[\n\r\s]+)"
-    "(<h3><br>[0-9]+\. )(.+?)(\\s*</h3>)",
-    lambda m: "\\section{%s}\\hypertarget{%s}{}" % (m.group(5), m.group(2)), s)
-
-s = re.sub("(<h3><br>[0-9]+\. )(.+)(</h3>)",
     lambda m: "\\section{%s}" % m.group(2), s)
 
 
 s = re.sub("(<a name=\")(.+)(\"></a>[\n\r\s]+)"
-    "(<h3><br>[0-9]+[a-z]+\. )(.+)(</h3>)",
-    lambda m: "\\subsection{%s}\\hypertarget{%s}{}"
-    % (m.group(5), m.group(2)), s)
+    "(<h3><br>[0-9]+\. )(.+?)(\\s*</h3>)",
+    lambda m: "\\subsection{%s}\r\n\\label{%s}" % (m.group(5), m.group(2)), s)
 
-s = re.sub("(<h3><br>[0-9]+[a-z]+\. )(.+)(</h3>)",
+s = re.sub("(<h3><br>[0-9]+\. )(.+)(</h3>)",
     lambda m: "\\subsection{%s}" % m.group(2), s)
 
 
+s = re.sub("(<a name=\")(.+)(\"></a>[\n\r\s]+)"
+    "(<h3><br>[0-9]+[a-z]+\. )(.+)(</h3>)",
+    lambda m: "\\subsubsection{%s}\r\n\\label{%s}"
+    % (m.group(5), m.group(2)), s)
+
+s = re.sub("(<h3><br>[0-9]+[a-z]+\. )(.+)(</h3>)",
+    lambda m: "\\subsubsection{%s}" % m.group(2), s)
+
+
 s = re.sub("(<a name=\")(.+)(\"></a>\r\n\r\n)(<h4><br>)(.+)(</h4>)",
-    lambda m: "\\subsubsection{%s}\\hypertarget{%s}{}"
+    lambda m: "\\paragraph{%s}\r\n\\label{%s}"
     % (m.group(5), m.group(2)), s)
 
 #FUSSNOTEN
@@ -96,7 +96,7 @@ s = re.sub(p, lambda m: "%s" % m.group(2), s)
 # <a href="#c1iii6hand">Hand-Ged?chtnis</a>
 p = re.compile("(<a href=\"#)(.+?)(\">\\s*)(.+?)(\\s*</a>)",
     re.MULTILINE | re.DOTALL)
-s = re.sub(p, lambda m: "\\hyperlink{%s}{%s}" % (m.group(2), m.group(4)), s)
+s = re.sub(p, lambda m: "\\hyperref[%s]{%s}" % (m.group(2), m.group(4)), s)
 
 # <a href="./Originale/book_090306.pdf">englisches Original vom 06.03.2009</a>
 p = re.compile("(<a href=\")(.+?)(\">)(.+?)(\\s*</a>)",
@@ -104,7 +104,7 @@ p = re.compile("(<a href=\")(.+?)(\">)(.+?)(\\s*</a>)",
 s = re.sub(p, lambda m: "\\hyperref[%s]{%s}" % (m.group(2), m.group(4)), s)
 
 p = re.compile("(<a name=\")(.+?)(\"></a>)", re.MULTILINE | re.DOTALL)
-s = re.sub(p, lambda m: "\\hypertarget{%s}{}" % m.group(2), s)
+s = re.sub(p, lambda m: "\\label{%s}" % m.group(2), s)
 
 
 #LISTEN
@@ -116,7 +116,7 @@ s = re.sub(p,
 p = re.compile("(<ol>)(.+?)(</ol>)", re.MULTILINE | re.DOTALL)
 s = re.sub(p,
     lambda m: "\\begin{enumerate} "
-    "%s \\end{enumerate}" % m.group(2), s)
+    "%s\\end{enumerate}" % m.group(2), s)
 
 p = re.compile("(<ol type=\"1\">)(.+?)(</ol>)", re.MULTILINE | re.DOTALL)
 s = re.sub(p,
@@ -131,7 +131,7 @@ s = re.sub(p,
 p = re.compile("(<ol type=\"i\">)(.+?)(</ol>)", re.MULTILINE | re.DOTALL)
 s = re.sub(p,
     lambda m: "\\begin{enumerate}[label={\\roman*.}] "
-    "%s \\end{enumerate}" % m.group(2), s)
+    "%s\\end{enumerate}" % m.group(2), s)
 
 p = re.compile("(<li>)(.+?)(</li>)", re.MULTILINE | re.DOTALL)
 s = re.sub(p, lambda m: "\\item %s" % m.group(2), s)
@@ -140,7 +140,7 @@ s = re.sub(p, lambda m: "\\item %s" % m.group(2), s)
 #TABELLEN
 s = re.sub("<tr>[\n\r\s]*?<td>", "", s)
 s = re.sub("</td>[\n\r\s]*?<td>", " & ", s)
-s = re.sub("</td>[\n\r\s]*?</tr>", " \\\\ ", s)
+s = re.sub("</td>[\n\r\s]*?</tr>", " \\\\\\\\ ", s)
 
 
 #AUFRÄUMEN
@@ -151,6 +151,7 @@ s = re.sub("\\$", "\\\\$", s)
 s = re.sub("\\#", "\\\\#", s)
 s = re.sub("&nbsp;", " ", s)
 s = re.sub("<hr>", "", s)
+s = re.sub("0 Prozent", "0\\\\%", s)
 
 
 #ZITATE
