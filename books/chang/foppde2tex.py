@@ -107,7 +107,7 @@ p = re.compile("(<a name=\")(.+?)(\"></a>)", re.MULTILINE | re.DOTALL)
 s = re.sub(p, lambda m: "\\label{%s}" % m.group(2), s)
 
 
-p = re.compile("(\\\\hyperref\\[)([a-z0-9]+?)(\\]\\{[\\w\\s^\\}]*?[IV]+\\.[0-9]*?[\\w\\s^\\}]*?\\})")
+p = re.compile("(\\\\hyperref\\[)(\\w+?)(\\]\\{[\\w\\s^\\}]*?[IV]+\\.[0-9]*?[\\w\\s^\\}]*?\\})")
 s = re.sub(p, lambda m: "\\hyperref[%s]{\\autoref{%s}}"
     % (m.group(2), m.group(2)), s)
 
