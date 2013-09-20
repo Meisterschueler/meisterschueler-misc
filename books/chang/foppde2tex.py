@@ -158,6 +158,7 @@ s = re.sub("\\#", "\\\\#", s)
 s = re.sub("&nbsp;", " ", s)
 s = re.sub("<hr>", "", s)
 s = re.sub("0 Prozent", "0\\\\%", s)
+s = re.sub(" - ", " -- ", s)
 
 
 #ZITATE
