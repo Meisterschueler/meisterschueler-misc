@@ -1,9 +1,9 @@
 % File: c22
 
-\chapter{Chromatische Tonleiter und Temperaturen}
+\subsection{Chromatische Tonleiter und Temperaturen}
 \label{c2_2}
 
-\section{Einleitung}
+\subsubsection{Einleitung}
 \label{c2_2a} 
 
 Die meisten von uns sind mit der chromatischen Tonleiter einigermaßen vertraut und wissen, daß sie temperiert sein muß, aber was sind die präzisen Definitionen der beiden Begriffe?
@@ -14,43 +14,44 @@ Ein grundlegendes mathematisches Fundament dieser Konzepte ist entscheidend für
 Informationen über das Stimmen finden Sie bei White, Howell, Fischer, Jorgensen oder Reblitz (s. \hyperref[reference]{Quellenverzeichnis}).
  
 
-\hypertarget{c2_2b}{}
+\label{c2_2b}
 
-\section{Mathematische Behandlung}
+\subsubsection{Mathematische Behandlung}
 \label{c2_2_math} 
 
-In \autoref{tab:chromleiter} sind drei Oktaven aufgeführt.
+In Tabelle 2.2a sind drei Oktaven aufgeführt.
 Die schwarzen Tasten des Klaviers werden mit Kreuzen dargestellt, z.B. steht das \# rechts von C für ein C\#, und ist nur bei der höchsten Oktave ausgewiesen.
 \textbf{Jede der aufeinanderfolgenden Frequenzänderungen in der chromatischen Tonleiter wird ein Halbton genannt, und eine Oktave besteht aus 12 Halbtönen.}
 Die Hauptintervalle und die Ganzzahlen, die die Frequenzverhältnisse dieser Intervalle repräsentieren, sind jeweils oberhalb und unterhalb der chromatischen Tonleiter aufgeführt.
 Das Wort Intervall wird hierbei im Sinne von zwei Noten benutzt, deren Frequenzverhältnis der Quotient kleiner ganzer Zahlen ist.
 Außer für Vielfache dieser Grundintervalle erzeugen Ganzzahlen, die größer als ungefähr 10 sind, Intervalle, die für das Ohr nicht einfach zu erkennen sind.
-Gemäß \autoref{tab:chromleiter} ist das grundlegendste Intervall die Oktave, bei der die Frequenz der höheren Note das Doppelte der Frequenz der tieferen Note ist.
+Gemäß Tabelle 2.2a ist das grundlegendste Intervall die Oktave, bei der die Frequenz der höheren Note das Doppelte der Frequenz der tieferen Note ist.
 Das Intervall zwischen C und G ist eine Quinte, und die Frequenzen von C und G stehen in einem Verhältnis von 2 zu 3 zueinander.
 Die große Terz hat vier Halbtöne, und die kleine Terz hat drei.
 \textbf{Die Zahl, die jedem Intervall zugeordnet ist, z.B. vier in der Quarte, ist bei der C-Dur-Tonleiter die Zahl der weißen Tasten inkl. der beiden Tasten am Anfang und Ende des Intervalls und hat keine weitere mathematische Bedeutung.}
 Beachten Sie, daß das Wort \enquote{Tonleiter} bzw. \enquote{Skala} in \enquote{chromatische Tonleiter}, \enquote{C-Dur-Tonleiter} und \enquote{logarithmische oder Frequenz-Skala} (s.u.) eine völlig unterschiedliche Bedeutung hat; die zweite ist eine Untermenge der ersten.
 
-\begin{table}
- \label{tab:chromleiter}
- \begin{tabular}{l|l|l|l|l|l|l}
-  \textbf{Oktave} & \textbf{Quinte} & \textbf{Quarte} & \textbf{Gr. Terz} & \textbf{Kl. Terz} & & \\ 
-  \hline
-  CDEFGAH & C D E F & G A H & C\# D\# & E F\# & G\# A\# H & C \\
-  1 & 2 & 3 & 4 & 5 & 6 & 8 \\
-  \end{tabular}
- \caption{Frequenzverhältnisse der Intervalle in der chromatischen Tonleiter}
-\end{table}
-%<h5>(Tabelle 2.2a: Frequenzverhältnisse der Intervalle in der chromatischen Tonleiter)</h5>
-
+<table border>
+ <tr>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Oktave}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Quinte}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Quarte}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Gr. Terz}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Kl. Terz}</td>
+  <td bgcolor=\enquote{\#E0E0E0}> </td>
+  <td bgcolor=\enquote{\#E0E0E0}>  \\ 
+ CDEFGAH & C D E F & G A H & C \# D \# & E F \# & G \# A \# H & C \\ 
+ 1 & 2 & 3 & 4 & 5 & 6 & 8 \\ 
+</table>
+<h5>(Tabelle 2.2a: Frequenzverhältnisse der Intervalle in der chromatischen Tonleiter)</h5>
 Wir können oben sehen, daß eine Quarte und eine Quinte sich zu einer Oktave \enquote{aufaddieren} und eine große Terz und eine kleine Terz sich zu einer Quinte \enquote{aufaddieren}.
 Beachten Sie, daß diese Addition im logarithmischen Raum erfolgt, wie unten erklärt wird.
 Die fehlende Ganzzahl 7 wird ebenfalls unten erklärt.
  
 
-\hypertarget{et1}{}
+\label{et1}
 
-\textbf{Die \hyperref[et]{gleichschwebend temperierte} (ET) chromatische Tonleiter besteht aus \enquote{gleichen} Halbtonschritten für jede nachfolgende Note.}
+\textbf{Die \hyperref[et]{gleichschwebend temperierte}\index{gleichschwebend temperierte} (ET) chromatische Tonleiter besteht aus \enquote{gleichen} Halbtonschritten für jede nachfolgende Note.}
 Sie sind in dem Sinne gleich, daß das Verhältnis der Frequenzen von zwei aufeinanderfolgenden Noten immer das gleiche ist.
 Diese Eigenschaft stellt sicher, daß jede Note (außer in der Tonhöhe) mit allen anderen identisch ist.
 Diese Gleichförmigkeit der Noten gestattet es dem Komponisten oder Künstler, jede Tonhöhe und jede Tonart zu benutzen, ohne auf große Dissonanzen zu treffen, wie unten weiter erklärt wird.
@@ -58,41 +59,49 @@ In einer Oktave einer ET-Tonleiter gibt es 12 gleiche Halbtöne und jede Oktave 
 Deshalb beträgt die Frequenzänderung für jeden Halbton:
 
 
-\hypertarget{gleich21}{}
-%<table border>&\#9;Halbtonschritt<sup>12</sup>&\#9;= 2&\#9;oder &\#9;Halbtonschritt&\#9;= 2<sup>1/12</sup> pprox 1,05946 \ </table>
-%<h5>(Gleichung 2.1)</h5>
-\begin{equation}
- \label{eq:Halbtonschritt}
- Halbtonschritt^{12} = 2 oder Halbtonschritt = 2^{1/12} \approx 1,05946
-\end{equation}
+\label{gleich21}
+<table border>&\#9;Halbtonschritt<sup>12</sup>&\#9;= 2&\#9;oder &\#9;Halbtonschritt&\#9;= 2<sup>1/12</sup> pprox 1,05946 \\ </table>
+<h5>(Gleichung 2.1)</h5>
 
-
-\autoref{eq:Halbtonschritt} definiert die ET chromatische Tonleiter und erlaubt die Berechnung der Frequenzverhältnisse von \enquote{Intervallen} in dieser Tonleiter.
+Gleichung 2.1 definiert die ET chromatische Tonleiter und erlaubt die Berechnung der Frequenzverhältnisse von \enquote{Intervallen} in dieser Tonleiter.
 Wie verhalten sich die \enquote{Intervalle} bei ET zu den Frequenzverhältnissen der reinen Intervalle?
-\textbf{Der Vergleich ist in \autoref{tab:templeiter} aufgeführt und zeigt, daß die Intervalle der ET-Tonleiter den reinen Intervallen sehr nah kommen.}
+\textbf{Der Vergleich ist in Tabelle 2.2b aufgeführt und zeigt, daß die Intervalle der ET-Tonleiter den reinen Intervallen sehr nah kommen.}
 
-\begin{table}
- \begin{tabular}{l|l|l|l}
- \label{tab:templeiter} 
- \textbf{Intervall} & \textbf{Freq.-Verh.} & \textbf{ET-Tonleiter} & \textbf{Differenz} \\ 
- \hline
- Kleine Terz & 6/5 = 1,2000 & $Halbtonschritt^3 \approx 1,1892$ & +0,0108 \\ 
- Große Terz & 5/4 = 1,2500 & $Halbtonschritt^4 \approx 1,2599$ & -0,0099 \\ 
- Quarte & 4/3 $\approx$ 1,3333 & $Halbtonschritt^5 \approx 1,3348$ & -0,0015 \\ 
- Quinte & 3/2 = 1,5000 & $Halbtonschritt^7 \approx 1,4983$ & +0,0017 \\ 
- Oktave & 2/1 = 2,0000 & $Halbtonschritt^{12} = 2,0000$ & 0,0000 \\ 
- \end{tabular}
- \caption{Vergleich der reinen Intervalle mit der gleichschwebend temperierten Tonleiter}
-\end{table}
-%<h5>(Tabelle 2.2b: Vergleich der reinen Intervalle mit der gleichschwebend temperierten Tonleiter)</h5>
-
+<table border cellpadding=3>
+ <tr>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Intervall}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Freq.-Verh.}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{ET-Tonleiter}</td>
+  <td bgcolor=\enquote{\#E0E0E0}>\textbf{Differenz} \\ 
+ <tr>
+  <td valign=\enquote{bottom}>Kleine Terz</td>
+  <td valign=\enquote{bottom}>6/5 = 1,2000 & Halbtonschritt<sup>3</sup> pprox 1,1892</td>
+  <td valign=\enquote{bottom}>+0,0108 \\ 
+ <tr>
+  <td valign=\enquote{bottom}>Große Terz</td>
+  <td valign=\enquote{bottom}>5/4 = 1,2500 & Halbtonschritt<sup>4</sup> pprox 1,2599</td>
+  <td valign=\enquote{bottom}>-0,0099 \\ 
+ <tr>
+  <td valign=\enquote{bottom}>Quarte</td>
+  <td valign=\enquote{bottom}>4/3 pprox 1,3333 & Halbtonschritt<sup>5</sup> pprox 1,3348</td>
+  <td valign=\enquote{bottom}>-0,0015 \\ 
+ <tr>
+  <td valign=\enquote{bottom}>Quinte</td>
+  <td valign=\enquote{bottom}>3/2 = 1,5000 & Halbtonschritt<sup>7</sup> pprox 1,4983</td>
+  <td valign=\enquote{bottom}>+0,0017 \\ 
+ <tr>
+  <td valign=\enquote{bottom}>Oktave</td>
+  <td valign=\enquote{bottom}>2/1 = 2,0000 & Halbtonschritt<sup>12</sup> = 2,0000</td>
+  <td valign=\enquote{bottom}>0,0000 \\ 
+</table>
+<h5>(Tabelle 2.2b: Vergleich der reinen Intervalle mit der gleichschwebend temperierten Tonleiter)</h5>
 \textbf{Die Abweichung ist bei den Terzen am größten, mehr als fünfmal so groß wie die Abweichung bei den anderen Intervallen aber trotzdem nur ungefähr 1\%.}
 Nichtsdestoweniger sind diese Abweichungen leicht zu hören, und einige Klavierliebhaber haben sie großmütig als \enquote{die rollenden Terzen} tituliert, während sie in Wahrheit inakzeptable Dissonanzen sind.
 Es ist ein Mangel, mit dem wir leben müssen, wenn wir die ET-Tonleiter akzeptieren wollen.
 Die Abweichungen bei den Quarten und Quinten erzeugen um das mittlere C Schwebungen von ungefähr 1 Hz, was bei den meisten Musikstücken kaum zu hören ist; diese Schwebungsfrequenz verdoppelt sich jedoch mit jeder höheren Oktave.
 
-Wäre die Ganzzahl 7 in \autoref{tab:chromleiter} aufgenommen worden, hätte sie ein Intervall mit dem Verhältnis 7/6 repräsentiert und würde dem Quadrat eines Halbtonschritts entsprechen.
-Die Abweichung zwischen diesen beiden Zahlen beträgt mehr als 4\% und ist zu groß, um ein musikalisch akzeptables Intervall zu bilden; sie wurde deshalb nicht in \autoref{tab:chromleiter} aufgeführt.
+Wäre die Ganzzahl 7 in Tabelle 2.2a aufgenommen worden, hätte sie ein Intervall mit dem Verhältnis 7/6 repräsentiert und würde dem Quadrat eines Halbtonschritts entsprechen.
+Die Abweichung zwischen diesen beiden Zahlen beträgt mehr als 4\% und ist zu groß, um ein musikalisch akzeptables Intervall zu bilden; sie wurde deshalb nicht in Tabelle 2.2a aufgeführt.
 Es ist nur ein mathematischer Zufall, daß die aus 12 Tönen bestehende chromatische Tonleiter so viele Verhältnisse nahe an den reinen Intervallen erzeugt.
 \textbf{Von den 8 kleinsten Ganzzahlen führt nur die Zahl 7 zu einem völlig inakzeptablen Intervall.
 Die chromatische Tonleiter basiert auf einem glücklichen mathematischen Zufall der Natur!
@@ -100,8 +109,8 @@ Sie wird durch die kleinste Anzahl von Noten gebildet, die die maximale Anzahl v
 Kein Wunder, daß frühe Zivilisationen glaubten, es läge etwas mystisches in dieser Tonleiter.
 Die Zahl der Noten in einer Oktave zu erhöhen, führt zu keiner großen Verbesserung der Intervalle, bis die Zahlen sehr groß werden, was diesen Ansatz für die meisten Musikinstrumente undurchführbar macht.
 
-Beachten Sie, daß die Frequenzverhältnisse der Quarten und Quinten sich nicht zu dem der Oktave aufaddieren ($1,5000 + 1,3333 = 2,8333$ statt 2,0000).
-Sie addieren sich allerdings im logarithmischen Maßstab, weil $(3/2)*(4/3) = 2$.
+Beachten Sie, daß die Frequenzverhältnisse der Quarten und Quinten sich nicht zu dem der Oktave aufaddieren (1,5000 + 1,3333 = 2,8333 statt 2,0000).
+Sie addieren sich allerdings im logarithmischen Maßstab, weil (3/2)x(4/3) = 2.
 Im logarithmischen Raum wird die Multiplikation zur Addition.
 Warum ist das so wichtig?
 Weil die Geometrie der Cochlea (Ohrschnecke) anscheinend eine logarithmische Komponente hat.
@@ -113,9 +122,9 @@ Wenn wir Intervalle spielen, üben wir mathematische Operationen im logarithmisc
 \textbf{Deshalb hat die logarithmische Natur der chromatischen Tonleiter viel mehr Konsequenzen, als nur einen größeren hörbaren Frequenzbereich zur Verfügung zu stellen.}
 Die logarithmische Skala stellt sicher, daß die beiden Noten jedes Intervalls, unabhängig davon wo man sich auf dem Klavier befindet, immer denselben Abstand voneinander haben.
 Durch die Übernahme einer logarithmischen Skala wird die Tastatur mechanisch auf das menschliche Ohr abgebildet!
-Das ist wahrscheinlich der Grund, warum Harmonien für das Ohr so angenehm sind - Harmonien werden durch das menschliche Gehör am leichtesten entschlüsselt und erinnert.
+Das ist wahrscheinlich der Grund, warum Harmonien für das Ohr so angenehm sind -- Harmonien werden durch das menschliche Gehör am leichtesten entschlüsselt und erinnert.
 
-Angenommen, wir würden \hyperref[gleich21]{\autoref{eq:Halbtonschritt}} nicht kennen; können wir die ET chromatische Tonleiter aus den Beziehungen der Intervalle erzeugen?
+Angenommen, wir würden \hyperref[gleich21]{Gleichung 2.1}\index{Gleichung 2.1} nicht kennen; können wir die ET chromatische Tonleiter aus den Beziehungen der Intervalle erzeugen?
 Wenn die Antwort ja ist, kann ein Klavierstimmer ein Klavier stimmen, ohne Berechnungen durchführen zu müssen.
 Diese Intervallbeziehungen, so stellt sich heraus, bestimmen die Frequenzen aller Noten der zwölfnotigen chromatischen Tonleiter.
 Eine Temperatur ist eine Gruppe von Intervallbeziehungen, die diese Bestimmung ermöglicht.
@@ -155,11 +164,11 @@ Es hat definitiv Vorteile, auf eine Temperatur zu standardisieren, aber das ist 
 Deshalb werden wir nun die verschiedenen Temperaturen erforschen.
  
 
-\hypertarget{c2_2c}{}
-\subsection{Temperatur und Musik}
+\label{c2_2c}
+\subsubsection{Temperatur und Musik}
 \label{c2_2_temp} 
 
-Der obige \hyperref[c2_2b]{mathematische Ansatz} ist nicht die Art und Weise, in der die chromatische Tonleiter entwickelt wurde.
+Der obige \hyperref[c2_2b]{mathematische Ansatz}\index{mathematische Ansatz} ist nicht die Art und Weise, in der die chromatische Tonleiter entwickelt wurde.
 Musiker begannen zunächst mit Intervallen und versuchten, eine Tonleiter mit einer minimalen Anzahl Noten zu finden, die diese Intervalle erzeugen würde.
 Die Erfordernis einer minimalen Anzahl von Noten ist offensichtlich wünschenswert, weil diese die Anzahl der Tasten, Saiten, Löcher, usw. bestimmt, die für die Konstruktion eines Musikinstruments notwendig sind.
 Intervalle sind notwendig, denn wenn man mehr als eine Note gleichzeitig spielen möchte, werden diese Noten für das Ohr unangenehme Dissonanzen erzeugen, außer wenn sie harmonische Intervalle bilden.
@@ -186,7 +195,7 @@ Nicht nur das, sondern jede Note, auf die Sie treffen, wenn Sie die Quinten spie
 Das bedeutet, daß der Quintenzirkel jede Note trifft, und das nur einmal, was eine nützliche Schlüsseleigenschaft für das Stimmen der Tonleiter ist und dafür, sie mathematisch zu untersuchen.
  
 
-\hypertarget{c2_2_hist}{}
+\label{c2_2_hist}
 
 \textbf{Historische Entwicklungen sind ein zentrales Thema der Diskussionen über Temperaturen, weil die Musik aus einer Zeit mit der Temperatur aus dieser Zeit verbunden ist.
 Pythagoras wird zugeschrieben, daß er ungefähr 550 v. Chr. unter Benutzung des Quintenzirkels die \enquote{pythagoreische Stimmung} erfunden hat, bei der die chromatische Tonleiter durch das Stimmen mit reinen Quinten erzeugt wird.}
@@ -195,8 +204,8 @@ Deshalb ist die letzte Note, die man bekommt, nicht genau die Oktavnote, sondern
 Da eine Quarte und eine Quinte eine Oktave bilden, resultiert die pythagoreische Stimmung in einer Tonleiter mit reinen Quarten und Quinten, wobei man allerdings am Ende eine sehr schlechte Dissonanz bekommt.
 Es stellt sich heraus, daß mit reinen Quinten zu stimmen, zu unreinen Terzen führt.
 Das ist ein weiterer Nachteil der pythagoreischen Stimmung.
-Wenn nun jemand stimmen sollte, indem er jede Quinte um 23/12 Cent zusammenzieht, dann hätte er am Ende genau eine Oktave, und das ist eine Möglichkeit, eine \hyperref[et1]{ET-Tonleiter} zu stimmen.
-Wir werden im Abschnitt über das Stimmen tatsächlich \hyperref[c2_6_et]{solch eine Methode benutzen}.
+Wenn nun jemand stimmen sollte, indem er jede Quinte um 23/12 Cent zusammenzieht, dann hätte er am Ende genau eine Oktave, und das ist eine Möglichkeit, eine \hyperref[et1]{ET-Tonleiter}\index{ET-Tonleiter} zu stimmen.
+Wir werden im Abschnitt über das Stimmen tatsächlich \hyperref[c2_6_et]{solch eine Methode benutzen}\index{solch eine Methode benutzen}.
 Die ET-Tonleiter war schon ca. 100 Jahre nach der Erfindung der pythagoreischen Stimmung bekannt.
 Deshalb ist die ET keine \enquote{moderne Temperatur}.
 
@@ -207,7 +216,7 @@ Musikalisch spielen Terzen eine bedeutendere Rolle als die Quinten, so daß die 
 Unglücklicherweise hat die mitteltönige Stimmung eine Wolfsquinte, die schlimmer als die der pythagoreischen Stimmung ist.
  
 
-\hypertarget{c2_2_wtk2}{}
+\label{c2_2_wtk2}
 
 Der nächste Meilenstein wird von Bachs \enquote{Das Wohltemperirte Clavier} markiert, in dem er Musik für verschiedene Wohltemperierte Stimmungen (WT) geschrieben hat.
 Das waren Temperaturen, die einen Kompromiß zwischen mitteltöniger und pythagoreischer Stimmung darstellten.
@@ -229,7 +238,7 @@ Deshalb werden die anderen Temperaturen im allgemeinen als \enquote{historische 
 Der historische Gebrauch der WT führte zu dem Konzept der Tonartfarbe, bei dem jede Tonart in Abhängigkeit von der Stimmung der Musik besondere Farbe verlieh, und zwar hauptsächlich durch die kleinen Verstimmungen, die \enquote{Spannung} und andere Effekte erzeugen.
 Das komplizierte die Lage sehr, weil die Musiker sich nun nicht nur mit reinen Intervallen und Wolfsquinten befassen mußten, sondern auch mit Farben, die nicht so leicht zu definieren waren.
 Das Ausmaß, in dem die Farben herausgebracht werden können, hängt vom Klavier, dem Pianisten und dem Zuhörer genauso ab wie vom Stimmer.
-Beachten Sie, daß der Stimmer die Streckung (s. \enquote{\hyperref[c2_5_stre]{Was ist Streckung?}} am Ende von Abschnitt 5) mit der Temperatur verbinden kann, um die Farbe zu kontrollieren.
+Beachten Sie, daß der Stimmer die Streckung (s. \enquote{\hyperref[c2_5_stre]{Was ist Streckung?}\index{Was ist Streckung?}} am Ende von Abschnitt 5) mit der Temperatur verbinden kann, um die Farbe zu kontrollieren.
 Nachdem man Musik gehört hat, die auf einem Klavier gespielt wird, das WT gestimmt ist, klingt ET eher trüb und farblos.
 Deshalb ist die Farbe der Tonart wichtig.
 Wichtiger sind die wundervollen Klänge von reinen (gestreckten) Intervallen bei WT.
@@ -241,7 +250,7 @@ Diese großen Komponisten waren sich der Temperatur genauestens bewußt.
 Die meisten Werke aus der Zeit von Chopin oder Liszt wurden im Hinblick auf ET komponiert, so daß die Tonartfarbe kein Thema ist.
 Obwohl diese Kompositionen für das geschulte Ohr in ET und WT unterschiedlich klingen, ist nicht klar, daß gegen WT etwas einzuwenden ist, weil reine Intervalle immer besser klingen als verstimmte.
 
-Meine persönliche Ansicht hinsichtlich des Klaviers ist, daß wir von ET abkommen sollten, weil sie uns eines der angenehmsten Aspekte der Musik beraubt - reinen Intervallen.
+Meine persönliche Ansicht hinsichtlich des Klaviers ist, daß wir von ET abkommen sollten, weil sie uns eines der angenehmsten Aspekte der Musik beraubt -- reinen Intervallen.
 Sie werden eine dramatische Demonstration davon erleben, wenn Sie den letzten Satz von Beethovens Waldstein-Sonate in ET und WT hören.
 Mitteltönige Stimmung kann ziemlich extrem sein, es sei denn Sie spielen Musik dieser Periode (vor Bach), so daß uns die WTs bleiben.
 Hinsichtlich der Einfachheit und der leichten Stimmbarkeit ist Kirnberger nicht zu schlagen.
